@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Importing css styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>VotApp</title>
+  </head>
+  <body background="Imagem.png">
+   
+    <!--Tela inicial-->
+    <section class="home-section">
+      <section class="section-header">
+          <!-- Cabeçalho -->
+          <h1><b>VotApp</b></h1>
+          <h2>Venha votar na melhor aplicação da sala!</h2>
+      </section>
+
+      <section class="meuForm">
+        <form class="form-control" class="form-label" >   
+          <h3><b>Faça sua votação</b></h3>             
+            <label for="codinome"><b>Codinome:</b></label>
+              <select class="form-select" id="codinome" onChange="atualizaSelectCodinome()">
+                <option>Escolha o codinome para votar</option>
+                <option value="Andre">Andre</option>
+                <option value="Antonio">Antonio</option>
+                <option value="Ratonilo">Ratonilo</option>
+                <option value="eduardo">eduardo</option>
+                <option value="Enzo">Enzo</option>
+                <option value="Fernando">Fernando</option>
+                <option value="Juliana">Juliana</option>
+                <option value="Altoe">Altoe</option>
+                <option value="Salgado">Salgado</option>
+                <option value="Regata">Regata</option>
+                <option value="Luis">Luis</option>
+                <option value="Nicolas">Nicolas</option>
+                <option value="Rauta">Rauta</option>
+                <option value="Silva">Silva</option>
+                <option value="Sophie">Sophie</option>
+                <option value="Thiago">Thiago</option>
+                <option value="Brito">Brito</option>
+                <option value="ulopesu">ulopesu</option>
+                <option value="Vinicius">Vinicius</option>
+                <option value="Bonella">Bonella</option>
+              </select>
+            <label  for="qtd-turings"><b>Quantidade de turings para premiar:</b></label>
+            <input type="text" id="qtd-turings" placeholder="Digite a qtd de Turings"/>
+            <input class="btn btn-outline-success" type="button" value="Votar !" id="registra-voto" /> 
+            <input class="btn btn-outline-success" type="button" value="Área Administrativa" id="area-administrativa" />
+        </form>
+      </section> 
+    </section>
+
+    <!--Tela área administrativa-->
+    <section class="adm-section" >
+      <section class="section-header">
+        <!-- Cabeçalho -->
+        <h1><b>VotApp</b></h1>
+        <h2>Essa é uma área administrativa restrita. Apenas usuários autorizados podem fazer modificações.</h2>
+      </section>
+
+      <section class="admForm">
+        <form class="form-control" class="form-label" >   
+          <h3><b>Emissão de moedas</b></h3>         
+          <label  for="endereco"><b>Endereço destino:</b></label>
+            <select class="form-select" id="endereco" onChange="atualizaSelectEndereco()">
+              <option>Escolha o codinome para votar</option>
+              <option value= 0xD07318971e2C15b4f8d3d28A0AEF8F16B9D8EAb6 >Andre</option>
+              <option value= 0x127B963B9918261Ef713cB7950c4AD16d4Fe18c6 >Antonio</option>
+              <option value= 0x5d84D451296908aFA110e6B37b64B1605658283f >Ratonilo</option>
+              <option value= 0x500E357176eE9D56c336e0DC090717a5B1119cC2 >eduardo</option>
+              <option value= 0x5217A9963846a4fD62d35BB7d58eAB2dF9D9CBb8 >Enzo</option>
+              <option value= 0xFED450e1300CEe0f69b1F01FA85140646E596567 >Fernando</option>
+              <option value= 0xFec23E4c9540bfA6BBE39c4728652F2def99bc1e >Juliana</option>
+              <option value= 0x6701D0C23d51231E676698446E55F4936F5d99dF >Altoe</option>
+              <option value= 0x8321730F4D59c01f5739f1684ABa85f8262f8980 >Salgado</option>
+              <option value= 0x4A35eFD10c4b467508C35f8C309Ebc34ae1e129a >Regata</option>
+              <option value= 0xDD551702Dc580B7fDa2ddB7a1Ca63d29E8CDCf33 >Luis</option>
+              <option value= 0x01fe9DdD4916019beC6268724189B2EED8C2D49a >Nicolas</option>
+              <option value= 0x726150C568f3C7f1BB3C47fd1A224a5C3F706BB1 >Rauta</option>
+              <option value= 0xCAFE34A88dCac60a48e64107A44D3d8651448cd9 >Silva</option>
+              <option value= 0xDfb0B8b7530a6444c73bFAda4A2ee3e482dCB1E3 >Sophie</option>
+              <option value= 0xBeb89bd95dD9624dEd83b12dB782EAE30805ef97 >Thiago</option>
+              <option value= 0xEe4768Af8caEeB042Da5205fcd66fdEBa0F3FD4f >Brito</option>
+              <option value= 0x89e66f9b31DAd708b4c5B78EF9097b1cf429c8ee >ulopesu</option>
+              <option value= 0x48cd1D1478eBD643dba50FB3e99030BE4F84d468 >Vinicius</option>
+              <option value= 0xFADAf046e6Acd9E276940C728f6B3Ac1A043054c>Bonella</option>
+            </select>
+          <label  for="emite-turings"><b>Quantidade de turings para emitir:</b></label>
+          <input type="text" id="emite-turings" placeholder="Digite a qtd de Turings"/>
+          <input class="btn btn-outline-success" type="button" value="Emite Moeda" id="emitir-moeda" />            
+          <input class="btn btn-outline-success" type="button" value="Encerrar votação" id="encerra-votacao" />            
+        </form>
+      </section> 
+    </section>
+        
+    <!-- Importing Ethers.js script -->
+    <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+
+    <!-- Importing our javascript file -->
+    <script src="./index.js"></script>
+  </body>
+</html>
